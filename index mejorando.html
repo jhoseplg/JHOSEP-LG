@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Productos - Información del Producto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        
+    </style>
+</head>
+<link rel="stylesheet" href="index.css">
+<body>
+
+    <header>
+        <div class="container">
+            <h1> PRODUCTOS DE CALIDAD A TU ALCANCE</h1>
+            <!-- Registro para el menu  Menu -->
+            <div id="registration-menu">
+                <form id="registration-form">
+                    <div class="form-group">
+                        <label for="username">Usuario:</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                </form>
+            </div>
+        </div>
+    </header>
+<!-- Barra de búsqueda -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Buscar productos" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+    </div>
+
+</nav>
+    <main>
+        <div class="container">
+            <!-- Sección de productos -->
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h2>Categorías</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#zapatos">NIKE</a></li>
+                        <li class="list-group-item"><a href="#camisetas">ADIDAS</a></li>
+                        <li class="list-group-item"><a href="#camisetas">PUMA</a></li>
+                        <main> 
+        <div class="container">
+            <section>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="producto">
+                            <h2>Producto 1</h2>
+                            <a href="informacion_producto.html" target="_blank">
+                                <img src="./1.jpg" alt="MEJORES OFERTAS" width="200">
+                            </a>
+                            <p>Zapatillas Harvest 30% de descuento.</p>
+                            <p>Precio: s/ 190.99</p>
+                            <button class="btn btn-primary">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="producto">
+                            <h2>Producto 2</h2>
+                            <a href="informacion_producto.html" target="_blank">
+                                <img src="./2.jpg" alt="MEJORES OFERTAS" width="200">
+                            </a>
+                            <p>Zapatillas Puma 30% de descuento.</p>
+                            <p>Precio: s/ 290.99</p>
+                            <button class="btn btn-primary">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="producto">
+                            <h2>Producto 3</h2>
+                            <a href="informacion_producto.html" target="_blank">
+                                <img src="./3 (1).jpg" alt="MEJORES OFERTAS" width="200">
+                            </a>
+                            <p>Zapatillas Adidas 30% de descuento.</p>
+                            <p>Precio: s/ 390.99</p>
+                            <button class="btn btn-primary">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+        
+            <!-- Informacion del productos -->
+            <section>
+                <h2>Solicitar Información del Producto</h2>
+                <form action="procesar_solicitud.php" method="post">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="producto">Producto de Interés:</label>
+                        <input type="text" class="form-control" id="producto" name="producto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+           <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Información de Contacto</h3>
+                    <p>Dirección: 123 Calle Principal, Ciudad</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                    <p>Email: palianfloresjhosep@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Enlaces Útiles</h3>
+                    <ul>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/productos">Productos</a></li>
+                        <li><a href="/nosotros">Nosotros</a></li>
+                        <li><a href="/contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Síguenos en Redes Sociales</h3>
+                    <ul>
+                        <li><a href="https://facebook.com/tusitio">Facebook</a></li>
+                        <li><a href="https://twitter.com/tusitio">Twitter</a></li>
+                        <li><a href="https://instagram.com/tusitio">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Derechos de autor © 2024 palian flores. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap  dependencia -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
