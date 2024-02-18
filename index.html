@@ -1,248 +1,49 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venta de Productos - Información del Producto</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Carrito de compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-        header {
-            background-color: #333333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-        }
-
-        section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 2em;
-        }
-
-        .producto {
-            width: 300px;
-            margin: 1em;
-            padding: 1em;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-  
 </head>
 
 <body>
-
-    <header>
-        <h1>Venta de Productos</h1>
-        
-         <!-- Registration Menu -->
-    <div id="registration-menu">
-        <form id="registration-form">
-            <label for="username">Usuario:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Registrar</button>
-        </form>
-    </div>
-    <!-- productos en venta -->
+    <header id="header">
+        <h1>Shopping Car</h1>
+        <div>
+            <img id="carrito" class="carrito" src="/img/carrito-de-compras.png" alt="">
+            <div id="numero"></div>
+        </div>
     </header>
 
     <main>
+        <div id="contenedor" class="contenedor"> </div>
+    </main>
+    
+    <div id="contenedorCompra">
+        <div class="informacionCompra" id="informacionCompra">
+            <h2>Cesta</h2>
+            <p class="x" id="x">x</p>
+        </div>
 
-        <section>
-            <div class="producto">
-                <h2>Producto 1</h2>
-                <img src="./5.jpg" width=300
-                height=400  alt="Producto 1">
-                <p>Zapatillas Harvest 30% de descuento.</p>
-                <p>Precio: s/ 190.99</p>
-                <button>Añadir al carrito</button>
-            </div>
-    
-            <div class="producto">
-                <h2>Producto 2</h2>
-                <img src="./3 (1).jpg" width=300
-                height=400  alt="Producto 2">
-                <p>Zapatillas Puma 30% de descuento.</p>
-                <p>Precio: s/ 290.99</p>
-                <button>Añadir al carrito</button>
-            </div>
-    
-            <div class="producto">
-                <h2>Producto 3</h2>
-                <img src="./2.jpg" width=300
-                height=400  alt="Producto 3">
-                <p>Zapatillas Adidas 30% de descuento.</p>
-                <p>Precio: s/ 390.99</p>
-                <button>Añadir al carrito</button>
-            </div>
-    
-            <div class="producto">
-                <h2>Producto 4</h2>
-                <img src="./1.jpg" width=300
-                height=400  alt="Producto 4">
-                <p>Zapatillas Nike 20% de descuento.</p>
-                <p>Precio: s/ 409.99</p>
-                <button>Añadir al carrito</button>
-            </div>
-    
-            <div class="producto">
-                <h2>Producto 5</h2>
-                <img src="./4 (1).jpg" width=300
-                height=400  alt="Producto 5">
-                <p>Zapatilla Rebook 30% de descuento.</p>
-                <p>Precio: s/ 439.99</p>
-                <button>Añadir al carrito</button>
-            </div>
-    
-            <!-- Otros productos -->
-            <div class="producto">
-                <h3>Producto 6</h2>
-                <img src="./2092314716348_6.jpg" width=300
-                height=400 alt="Producto 6">
-               
-                <p>Polo Manga Corta Holográfica Harvest .</p>
-                <p>Precio: s/ 48.99</p>
-                <button>Añadir al carrito</button>
-            </div>
-            
-            <div class="producto">
-                <h3>Producto 7</h2>
-                <img src="./2033309392307-2.jpg" width=300
-                height=400 alt="Producto 7">
-                <p>Polo Manga Corta Basli2x Harvest .</p>
-                <p>Precio: s/ 39.99</p>
-                <button>Añadir al carrito</button>
-            </div>
-            
-            <div class="producto">
-                <h3>Producto 8</h2>
-                <img src="./2033309392628_3.jpg" width=300
-                height=400 alt="Producto 8">
-                <p>Polo Manga Corta Print Harvest .</p>
-                <p>Precio: s/ 49.99</p>
-                <button>Añadir al carrito</button>
-            </div>
-            
-            <div class="producto">
-                <h3>Producto 9</h2>
-                <img src="./2092314864667-4.jpg" width=300
-                height=400 alt="Producto 9">
-                <p>Polo Manga Corta Full Print Harvest .</p>
-                <p>Precio: s/ 29.99</p>
-                <button>Añadir al carrito</button>
-            </div>
+        <div class="productosCompra" id="productosCompra"></div>
+        <div class="total" id="total"></div>
+        <button>Finalizar Compra</button>
+    </div>
 
-            <div class="producto">
-                <h3>Producto 10</h2>
-                <img src="./2005305504701_8.jpg" width=300
-                height=400 alt="Producto 10">
-                <p>Polo nautica  classic.</p>
-                <p>Precio: s/ 59.99</p>
-                <button>Añadir al carrito</button>
-            </div>
-                        <!-- Otros productos -->
-                        <div class="producto">
-                            <h3>Producto 11</h2>
-                            <img src="./pantalo 1.jpg" width=300
-                            height=400 alt="Producto 11">
-                           
-                            <p>Pantalon marquis para hombre.</p>
-                            <p>Precio: s/ 148.99</p>
-                            <button>Añadir al carrito</button>
-                        </div>
-                        
-                        <div class="producto">
-                            <h3>Producto 12</h2>
-                            <img src="./pantalon 2.jpg" width=300
-                            height=400 alt="Producto 12">
-                            <p>Pantalon marquies para hombre algodon twill .</p>
-                            <p>Precio: s/ 139.99</p>
-                            <button>Añadir al carrito</button>
-                        </div>
-                        
-                        <div class="producto">
-                            <h3>Producto 13</h2>
-                            <img src="./pantalon 3.jpg" width=300
-                            height=400 alt="Producto 13">
-                            <p>Pantalon ff chino cacharel para hombre .</p>
-                            <p>Precio: s/ 149.99</p>
-                            <button>Añadir al carrito</button>
-                        </div>
-                        
-                        <div class="producto">
-                            <h3>Producto 14</h2>
-                            <img src="./pantalon 4.jpg" width=300
-                            height=400 alt="Producto 14">
-                            <p>Pantalon navigata para hombre.</p>
-                            <p>Precio: s/ 129.99</p>
-                            <button>Añadir al carrito</button>
-                        </div>
-            
-                        <div class="producto">
-                            <h3>Producto 15</h2>
-                            <img src="./pantalon 5.jpg" width=300
-                            height=400 alt="Producto 15">
-                            <p>Pantalon marquis para hombre .</p>
-                            <p>Precio: s/ 159.99</p>
-                            <button>Añadir al carrito</button>
-                        </div>
-            <!-- informacion de productos -->
-            <section>
-                <h2>Solicitar Información del Producto</h2>
-    
-                <form action="procesar_solicitud.php" method="post">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-    
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-    
-                    <label for="producto">Producto de Interés:</label>
-                    <input type="text" id="producto" name="producto" required>
-    
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-    
-                    <button type="submit">Enviar Solicitud</button>
-                </form>
-            </section>
-            <hr>
-
-       
-</main>
-
-    <footer>
-    
- </footer>
-
-
+    <script src="main.js"></script>
 </body>
 
 </html>
