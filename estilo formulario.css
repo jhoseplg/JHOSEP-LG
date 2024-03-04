@@ -1,0 +1,86 @@
+*{
+    margin:0;padding:0;
+    }
+    body{
+    background:hwb(0 35% 54%);
+    }
+    h1{
+        font-size: 1.5em;
+        text-align: center;
+        color:hwb(0 0% 100%);
+    }
+    #contenedor{
+    background:transparent;
+    margin:0 auto;
+    width:96%;
+    }
+    #contenedor form fieldset{
+    border: 2px solid rgb(214, 155, 30);
+    padding:5px;
+    font-size:20px;
+    }
+    #contenedor form{
+    padding:10px;
+    margin:10px 30px;
+    border:thin solid hsl(0, 89%, 41%);
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -o-border-radius:20px;
+    -ms-border-radius:20px;
+    }
+    #contenedor form label{
+        color:hwb(0 1% 99%);
+        font-size:18px;
+    }
+    #contenedor form label:hover{
+        color:hsl(0, 24%, 26%);
+        cursor:pointer;
+    }
+    #contenedor form input[type="text"]{
+        width:400px;
+        height:35px;
+        padding-left:5px;
+        font-family:Helvetica;
+        font-size:16px;
+    }
+    #contenedor form textarea{
+        resize:none;
+        padding:5px;
+    }
+    #contenedor form input[type="text"], textarea{
+    background: #b1cfd7;
+    }
+    
+    #contenedor form input[type="text"]:focus, #contenedor form textarea:focus{
+    background: hwb(129 38% 34%);
+    outline-color: #06d46d;
+    }
+    #contenedor form input[type="text"]:active, #contenedor form textarea:active{
+    background: #497fbd;
+    outline-color: #0a8f4d;
+    }
+    #contenedor form .canbio{
+    transition:all 1s ease-in-out;
+    -webkit-transition:all 1s ease-in-out;
+    -moz-transition:all 1s ease-in-out;
+    -ms-transition:all 1s ease-in-out;
+    -o-transition:all 1s ease-in-out;
+    }
+    #contenedor form button{
+    background:#0b43d1;
+    border-radius:5px;
+    color:rgb(0, 0, 0);
+    padding:10px 20px;
+    border:2px solid rgb(7, 8, 1);
+    }
+    #contenedor form button:hover
+    {
+        color:rgb(198, 25, 25);
+        cursor:pointer;
+    }
+    footer{
+        background: #848080;
+        text-align: center;
+        padding: 20px 2%;
+    }
