@@ -1,0 +1,56 @@
+.form-control {    
+    margin-bottom: 7px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 7px;
+    font:weight 200px
+}
+
+.form-control input {
+    border: none;
+    background-color: hsl(0, 4%, 62%);
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;    
+}
+.form-control, input:focus {
+    outline: none;
+}
+
+.form-control.ok input {
+    border: 0.1px solid;
+    border-color: hsl(124, 100%, 52%);
+}
+.form-control.falla input {
+    border: 0.1px solid;
+    border-color: #8a1007;
+}
+
+#formulario button {
+    background: #ce4506;
+    border:1px solid #fd5f00;
+    border-radius: 2px;
+    color: #cccc0b;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+}
+.form-control p {
+    visibility: hidden;
+    position: absolute;
+    font-size: small;
+    font-weight: 500;
+    text-align: right;
+}
+
+.form-control.falla p {
+    visibility: visible;
+    color:#e74c3c;
+}
